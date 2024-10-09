@@ -1,0 +1,111 @@
+body {
+  font-family: sans-serif;
+}
+
+.volume-box {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+}
+
+.box-character {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.character-img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  margin: 20%;
+}
+.player-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  margin-left: 0;
+  padding: 0; /* Reset padding to remove default space */
+  /* border: #0056b3 solid 5px; */
+  gap: 20px;
+}
+
+.player-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  border: 5px solid gray;
+  border-radius: 15px;
+  padding: 5px;
+  gap: -50px;
+}
+
+.player-items:hover {
+  border: 5px solid red;
+}
+.selected-character {
+  border: 5px solid red;
+}
+.cell {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background-color: #ddd;
+  border: 15px;
+  cursor: pointer;
+}
+
+.cell:hover {
+  background-color: #bbb;
+}
+
+.highlight {
+  border: 3px solid green;
+}
+
+.info {
+  margin-top: 20px;
+}
+
+.reset {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.reset:hover {
+  background-color: #0056b3;
+}
